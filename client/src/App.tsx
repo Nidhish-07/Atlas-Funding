@@ -15,11 +15,20 @@ const App = (props: Props) => {
       <div className="sm:flex hidden mr-10 relative">
         <SideBar></SideBar>
       </div>
-      <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5 ">
+      <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5 mt-6">
         <Header></Header>
       </div>
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/profile" element={<Profile></Profile>} />
+        <Route
+          path="/create-campaign"
+          element={<CreateCampaign></CreateCampaign>}
+        ></Route>
+        <Route
+          path="/campaign-details/:id"
+          element={<Campaign></Campaign>}
+        ></Route>
       </Routes>
     </div>
   );
