@@ -6,5 +6,5 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["vite.config.ts", "./src/**/*.ts", "src/constants/index.js", "src/utils/index.js"]
+  "include": ["vite.config.ts", "./src/**/*.ts", "src/constants/index.js", "src/utils/index.ts"]
 }
